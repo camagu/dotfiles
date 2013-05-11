@@ -1,10 +1,21 @@
-""""""""""""""""""""""""""""""""""""""""
-" General
-""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 
 let mapleader=","
 let g:mapleader=","
+
+""""""""""""""""""""""""""""""""""""""""
+" Vundle
+""""""""""""""""""""""""""""""""""""""""
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+""""""""""""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""""""""""""
 
 filetype plugin on
 filetype indent on
