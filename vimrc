@@ -8,13 +8,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
-
-" Colors
-
-Bundle 'twerth/ir_black'
-Bundle 'endel/vim-github-colorscheme'
-
+source ~/.vim/vundle.vim
 
 """"""""""""""""""""""""""""""""""""""""
 " General
