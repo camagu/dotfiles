@@ -1,8 +1,5 @@
 set nocompatible
 
-let mapleader=","
-let g:mapleader=","
-
 """"""""""""""""""""""""""""""""""""""""
 " Vundle
 """"""""""""""""""""""""""""""""""""""""
@@ -13,12 +10,20 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+" Colors
+
+Bundle 'twerth/ir_black'
+Bundle 'endel/vim-github-colorscheme'
+
+
 """"""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""
-
 filetype plugin on
 filetype indent on
+
+let mapleader=","
+let g:mapleader=","
 
 set autoread
 set hidden
@@ -67,6 +72,7 @@ set scrolloff=4
 set laststatus=2
 
 syntax enable
+colorscheme ir_black
 
 """""""""""""""""""""""""""""""""""""""
 " Search
