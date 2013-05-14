@@ -15,4 +15,5 @@ Bundle 'othree/html5.vim'
 " General purpose
 """"""""""""""""""""""""""""""""""""""""
 Bundle 'ervandew/supertab'
+Bundle 'scrooloose/nerdtree'
 
