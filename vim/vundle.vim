@@ -10,6 +10,7 @@ Bundle 'endel/vim-github-colorscheme'
 " Langs
 """"""""""""""""""""""""""""""""""""""""
 Bundle 'othree/html5.vim'
+Bundle 'pangloss/vim-javascript'
 
 """"""""""""""""""""""""""""""""""""""""
 " General purpose
