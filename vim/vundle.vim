@@ -18,4 +18,5 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jeetsukumaran/vim-buffergator'
+Bundle 'jistr/vim-nerdtree-tabs'
 
