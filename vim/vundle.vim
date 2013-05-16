@@ -11,6 +11,16 @@ Bundle 'endel/vim-github-colorscheme'
 """"""""""""""""""""""""""""""""""""""""
 Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'tpope/vim-haml'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-git'
+Bundle 'nono/vim-handlebars'
+Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-markdown'
+Bundle 'sunaku/vim-ruby-minitest'
 
 """"""""""""""""""""""""""""""""""""""""
 " General purpose
