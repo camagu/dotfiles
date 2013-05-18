@@ -38,4 +38,4 @@ Bundle 'ervandew/supertab'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'jistr/vim-nerdtree-tabs'
-
+Bundle 'wincent/Command-T'
