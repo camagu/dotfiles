@@ -20,6 +20,8 @@ Bundle 'nono/vim-handlebars'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'skammer/vim-css-color'
 Bundle 'groenewege/vim-less'
 Bundle 'cakebaker/scss-syntax.vim'
 
