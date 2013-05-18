@@ -7,9 +7,7 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Tabs navigation
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc>:tabnew<CR>i
+nnoremap <C-M-j> :tabprevious<CR>
+nnoremap <C-M-k> :tabnext<CR>
+inoremap <C-M-j> <Esc>:tabprevious<CR>i
+inoremap <C-M-k> <Esc>:tabnext<CR>i
