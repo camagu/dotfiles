@@ -25,4 +25,4 @@ map <silent> <leader>t :NERDTreeTabsToggle<CR>
 map <silent> <leader>b :BuffergatorToggle<CR>
 
 " find
-map <silent> <leader>f :CtrlP<CR>
+map <silent> <leader>f :CtrlP .<CR>
