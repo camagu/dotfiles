@@ -22,4 +22,4 @@ inoremap <C-M-k> <Esc>:tabnext<CR>i
 """"""""""""""""""""""""""""""""""""""""
 map <leader>n :NERDTreeTabsToggle<CR>
 map <leader>b :BuffergatorToggle<CR>
-
+map <silent> <leader>f :CtrlP<CR>
