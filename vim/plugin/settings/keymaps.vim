@@ -16,10 +16,13 @@ inoremap <C-M-k> <Esc>:tabnext<CR>i
 
 """"""""""""""""""""""""""""""""""""""""
 " Plugins keymaps
-"
-" <leader>n NERDTree
-" <leader>b BufferGator
 """"""""""""""""""""""""""""""""""""""""
-map <leader>n :NERDTreeTabsToggle<CR>
-map <leader>b :BuffergatorToggle<CR>
+
+" tree
+map <silent> <leader>t :NERDTreeTabsToggle<CR>
+
+" buffer
+map <silent> <leader>b :BuffergatorToggle<CR>
+
+" find
 map <silent> <leader>f :CtrlP<CR>
