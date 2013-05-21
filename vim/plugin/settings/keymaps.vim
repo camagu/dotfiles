@@ -19,9 +19,7 @@ inoremap <C-M-k> <Esc>:tabnext<CR>i
 "
 " <leader>n NERDTree
 " <leader>b BufferGator
-" <leader>t CommandT
 """"""""""""""""""""""""""""""""""""""""
 map <leader>n :NERDTreeTabsToggle<CR>
 map <leader>b :BuffergatorToggle<CR>
-map <leader>t :CommandT<CR>
 
