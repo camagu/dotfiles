@@ -1,3 +1,6 @@
 [submodule "vim/bundle/vundle"]
 	path = vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "vendor/symfony2-autocomplete"]
+	path = vendor/symfony2-autocomplete
+	url = https://github.com/KnpLabs/symfony2-autocomplete.git
