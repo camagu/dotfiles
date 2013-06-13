@@ -26,3 +26,14 @@ map <silent> <leader>b :BuffergatorToggle<CR>
 
 " find
 map <silent> <leader>f :CtrlP .<CR>
+
+""""""""""""""""""""""""""""""""""""""""
+" Plugins keymaps
+""""""""""""""""""""""""""""""""""""""""
+
+function WriteCreatingDirs()
+  execute ':silent !mkdir -p %:h'
+  write
+endfunction
+
+command W call WriteCreatingDirs()
