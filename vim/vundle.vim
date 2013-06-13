@@ -16,6 +16,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'tpope/vim-haml'
 Bundle 'slim-template/vim-slim'
 Bundle 'nono/vim-handlebars'
+Bundle 'estin/htmljinja'
 
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
