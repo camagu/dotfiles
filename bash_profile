@@ -8,8 +8,14 @@ if [ -f ~/.bash_profile.before ]; then
   source ~/.bash_profile.before
 fi
 
-# Symfony alias
-alias sf="php ./app/console"
-alias sf-create="composer create-project symfony/framework-standard-edition"
+# Git
+source ${VENDOR_DIR}/git-completion.bash/git-completion.bash
 
+alias g="git"
+complete -o default -o nospace -F _git g
+
+# Symfony
+alias sf="./app/console"
+alias sf-create="composer create-project symfony/framework-standard-edition"
 source ${VENDOR_DIR}/symfony2-autocomplete/symfony2-autocomplete.bash
+

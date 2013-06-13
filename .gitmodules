@@ -4,3 +4,6 @@
 [submodule "vendor/symfony2-autocomplete"]
 	path = vendor/symfony2-autocomplete
 	url = https://github.com/KnpLabs/symfony2-autocomplete.git
+[submodule "vendor/git-completion.bash"]
+	path = vendor/git-completion.bash
+	url = https://github.com/camagu/git-completion.bash.git
