@@ -28,12 +28,20 @@ map <silent> <leader>b :BuffergatorToggle<CR>
 map <silent> <leader>f :CtrlP .<CR>
 
 """"""""""""""""""""""""""""""""""""""""
-" Plugins keymaps
+" Custom functionality
 """"""""""""""""""""""""""""""""""""""""
 
+" create parent folder on save
 function WriteCreatingDirs()
   execute ':silent !mkdir -p %:h'
   write
 endfunction
 
 command W call WriteCreatingDirs()
+
+" open files relative to the current file
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+command Ew e %%
+command Es sp %%
+command Ev vsp %%
+command Et tabe %%
