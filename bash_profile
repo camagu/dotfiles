@@ -16,6 +16,7 @@ complete -o default -o nospace -F _git g
 
 # Symfony
 alias sf="./app/console"
+alias sf-test="phpunit -c app"
 alias sf-create="composer create-project symfony/framework-standard-edition"
 source ${VENDOR_DIR}/symfony2-autocomplete/symfony2-autocomplete.bash
 
