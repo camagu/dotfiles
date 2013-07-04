@@ -7,6 +7,7 @@ Bundle 'twerth/ir_black'
 Bundle 'endel/vim-github-colorscheme'
 Bundle '29decibel/codeschool-vim-theme'
 Bundle 'Lokaltog/vim-distinguished'
+Bundle 'jpo/vim-railscasts-theme'
 
 """"""""""""""""""""""""""""""""""""""""
 " Langs
