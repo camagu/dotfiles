@@ -9,6 +9,7 @@ Bundle '29decibel/codeschool-vim-theme'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'jpo/vim-railscasts-theme'
 Bundle 'altercation/vim-colors-solarized'
+Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 
 """"""""""""""""""""""""""""""""""""""""
 " Langs
@@ -24,6 +25,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'slim-template/vim-slim'
 Bundle 'nono/vim-handlebars'
 Bundle 'estin/htmljinja'
+Bundle 'johnhamelink/blade.vim'
 
 " JS and JS preprocessors
 Bundle 'pangloss/vim-javascript'
