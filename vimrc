@@ -54,6 +54,7 @@ set mouse=a
 
 if has("gui_running")
   set guioptions=Aem
+  colorscheme codeschool
 endif
 
 set wildmenu
@@ -66,7 +67,6 @@ set scrolloff=4
 set laststatus=2
 
 syntax enable
-colorscheme ir_black
 
 """""""""""""""""""""""""""""""""""""""
 " Search
