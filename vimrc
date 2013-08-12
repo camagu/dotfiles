@@ -63,6 +63,7 @@ set number
 set ruler
 set showcmd
 set title
+set noshowmode
 set scrolloff=4
 
 set laststatus=2
