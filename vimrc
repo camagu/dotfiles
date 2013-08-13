@@ -1,5 +1,5 @@
 set nocompatible
-set shellcmdflag=-ci
+" set shellcmdflag=-ci
 
 """"""""""""""""""""""""""""""""""""""""
 " Vundle
