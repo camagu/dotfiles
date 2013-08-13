@@ -67,3 +67,4 @@ Bundle 'scrooloose/syntastic'
 Bundle 'Yggdroot/indentLine'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
+Bundle 'sexy_scroller.vim'
