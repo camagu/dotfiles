@@ -11,6 +11,8 @@ Bundle 'jpo/vim-railscasts-theme'
 Bundle 'altercation/vim-colors-solarized'
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 
+Bundle 'Vim-Ultimate-Colorscheme-Utility'
+
 """"""""""""""""""""""""""""""""""""""""
 " Langs
 """"""""""""""""""""""""""""""""""""""""
