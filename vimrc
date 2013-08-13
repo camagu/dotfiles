@@ -6,6 +6,13 @@ set nocompatible
 """"""""""""""""""""""""""""""""""""""""
 filetype off
 
+let g:ulti_color_filetype=0
+
+if has("gui_running") == 0
+  let g:ulti_color_auto_save=0
+  let g:ulti_color_auto_load=0
+endif
+
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
@@ -56,6 +63,9 @@ set mouse=a
 if has("gui_running")
   set guioptions=Aem
   colorscheme codeschool
+else
+  colorscheme solarized
+  set background=dark
 endif
 
 set wildmenu
