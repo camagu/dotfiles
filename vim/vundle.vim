@@ -11,8 +11,6 @@ Bundle 'jpo/vim-railscasts-theme'
 Bundle 'altercation/vim-colors-solarized'
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 
-Bundle 'Vim-Ultimate-Colorscheme-Utility'
-
 """"""""""""""""""""""""""""""""""""""""
 " Langs
 """"""""""""""""""""""""""""""""""""""""
@@ -66,4 +64,3 @@ Bundle 'Rename'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
-Bundle 'sexy_scroller.vim'
