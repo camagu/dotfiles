@@ -39,9 +39,5 @@ endfunction
 
 command W call WriteCreatingDirs()
 
-" open files relative to the current file
+" Set %% as current file relative path
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
-command Ew e %%
-command Es sp %%
-command Ev vsp %%
-command Et tabe %%
