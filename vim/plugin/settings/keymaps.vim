@@ -27,6 +27,12 @@ map <silent> <leader>b :BuffergatorToggle<CR>
 " find
 map <silent> <leader>f :CtrlP .<CR>
 
+" RSpec key maps
+map <silent> <Leader>rsf :call RunCurrentSpecFile()<CR>
+map <silent> <Leader>rsc :call RunNearestSpec()<CR>
+map <silent> <Leader>rsl :call RunLastSpec()<CR>
+map <silent> <Leader>rsa :call RunAllSpecs()<CR>
+
 """"""""""""""""""""""""""""""""""""""""
 " Custom functionality
 """"""""""""""""""""""""""""""""""""""""

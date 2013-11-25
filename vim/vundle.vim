@@ -44,6 +44,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'thoughtbot/vim-rspec'
 
 " Text preprocessors
 Bundle 'timcharper/textile.vim'
