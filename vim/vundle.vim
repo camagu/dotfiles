@@ -46,6 +46,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 
 " Text preprocessors
 Bundle 'timcharper/textile.vim'
@@ -68,3 +69,4 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
 Bundle 'tpope/vim-dispatch'
+Bundle 'kana/vim-textobj-user'
