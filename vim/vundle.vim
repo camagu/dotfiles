@@ -67,3 +67,4 @@ Bundle 'Rename'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
+Bundle 'tpope/vim-dispatch'
