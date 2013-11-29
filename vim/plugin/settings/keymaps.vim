@@ -1,4 +1,15 @@
 """"""""""""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""""""""""""
+
+" Show/hide color column
+nnoremap <leader>m :set colorcolumn=80<CR>
+nnoremap <leader>M :set colorcolumn=<CR>
+
+" Turn search highlight off
+map <silent> <leader><cr> :noh<cr>
+
+""""""""""""""""""""""""""""""""""""""""
 " Navigation keymaps
 """"""""""""""""""""""""""""""""""""""""
 
@@ -18,16 +29,16 @@ inoremap <C-M-k> <Esc>:tabnext<CR>i
 " Plugins keymaps
 """"""""""""""""""""""""""""""""""""""""
 
-" tree
+" NERDTree - (t)ree
 map <silent> <leader>t :NERDTreeTabsToggle<CR>
 
-" buffer
+" BufferGator - (b)uffer
 map <silent> <leader>b :BuffergatorToggle<CR>
 
-" find
+" CtrlP - (f)ind
 map <silent> <leader>f :CtrlP .<CR>
 
-" RSpec key maps
+" RSpec - (rs)pec (*)
 map <silent> <Leader>rsf :call RunCurrentSpecFile()<CR>
 map <silent> <Leader>rsc :call RunNearestSpec()<CR>
 map <silent> <Leader>rsl :call RunLastSpec()<CR>

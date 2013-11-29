@@ -94,13 +94,6 @@ set incsearch
 """"""""""""""""""""""""""""""""""""""""
 set completeopt=longest,menuone
 
+" If no omnifunc exists for the current file type use default completition
 autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete |	endif
 
-""""""""""""""""""""""""""""""""""""""""
-" Mappings
-""""""""""""""""""""""""""""""""""""""""
-
-nnoremap <leader>m :set colorcolumn=80<CR>
-nnoremap <leader>M :set colorcolumn=<CR>
-
-map <silent> <leader><cr> :noh<cr>

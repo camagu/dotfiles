@@ -18,6 +18,7 @@ Bundle "chriskempson/base16-vim"
 
 " Git
 Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-fugitive'
 
 " HTML and HTML preprocessors
 Bundle 'othree/html5.vim'
@@ -38,7 +39,7 @@ Bundle 'skammer/vim-css-color'
 Bundle 'groenewege/vim-less'
 Bundle 'cakebaker/scss-syntax.vim'
 
-" Ruby and rRrails related
+" Ruby and Rails related
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-endwise'
@@ -55,18 +56,27 @@ Bundle 'tpope/vim-markdown'
 """"""""""""""""""""""""""""""""""""""""
 " General purpose
 """"""""""""""""""""""""""""""""""""""""
-Bundle 'ervandew/supertab'
+
+" Navigation
 Bundle 'scrooloose/nerdtree'
-Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/matchit.zip.git'
-Bundle 'tpope/vim-fugitive'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'Rename'
-Bundle 'scrooloose/syntastic'
+
+" Text utilities
+Bundle 'ervandew/supertab'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
-Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-surround'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kana/vim-textobj-user'
+Bundle 'vim-scripts/matchit.zip.git'
+
+" Syntaxis checkers
+Bundle 'scrooloose/syntastic'
+
+" User Interface
+Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
+
+" Misc
+Bundle 'Rename'
+Bundle 'tpope/vim-dispatch'
