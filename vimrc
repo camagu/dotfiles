@@ -64,7 +64,7 @@ if has("gui_running")
   set guioptions=Aem
   colorscheme codeschool
 else
-  colorscheme solarized
+  colorscheme base16-eighties
   set background=dark
 endif
 
