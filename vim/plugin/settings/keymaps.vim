@@ -9,6 +9,9 @@ nnoremap <leader>M :set colorcolumn=<CR>
 " Turn search highlight off
 map <silent> <leader><cr> :noh<cr>
 
+" Remap 0 to first non-blank character
+map 0 ^
+
 """"""""""""""""""""""""""""""""""""""""
 " Navigation keymaps
 """"""""""""""""""""""""""""""""""""""""
