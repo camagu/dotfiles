@@ -97,3 +97,9 @@ set completeopt=longest,menuone
 " If no omnifunc exists for the current file type use default completition
 autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete |	endif
 
+""""""""""""""""""""""""""""""""""""""""
+" Tags
+""""""""""""""""""""""""""""""""""""""""
+
+" Use tagfile for each project
+set tags=tags

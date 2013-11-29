@@ -80,3 +80,5 @@ Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
 " Misc
 Bundle 'Rename'
 Bundle 'tpope/vim-dispatch'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
