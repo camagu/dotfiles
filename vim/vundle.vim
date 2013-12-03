@@ -3,14 +3,13 @@ Bundle 'gmarik/vundle'
 """"""""""""""""""""""""""""""""""""""""
 " Colors
 """"""""""""""""""""""""""""""""""""""""
-Bundle 'twerth/ir_black'
-Bundle 'endel/vim-github-colorscheme'
-Bundle '29decibel/codeschool-vim-theme'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'jpo/vim-railscasts-theme'
+" With term support (safe to use in terminals)
+Bundle "chriskempson/vim-tomorrow-theme"
 Bundle 'altercation/vim-colors-solarized'
+
+" Without term support (gui only)
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
-Bundle "chriskempson/base16-vim"
+Bundle '29decibel/codeschool-vim-theme'
 
 """"""""""""""""""""""""""""""""""""""""
 " Langs

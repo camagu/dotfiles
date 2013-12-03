@@ -60,12 +60,10 @@ set nowrap
 set t_Co=256
 set mouse=a
 
+colorscheme Tomorrow-Night-Bright
+
 if has("gui_running")
   set guioptions=Aem
-  colorscheme codeschool
-else
-  colorscheme base16-eighties
-  set background=dark
 endif
 
 set wildmenu
@@ -79,6 +77,11 @@ set scrolloff=4
 set laststatus=2
 
 syntax enable
+
+if !has("gui_running")
+  " Use term bg color
+  highlight Normal ctermbg=none
+endif
 
 """""""""""""""""""""""""""""""""""""""
 " Search
