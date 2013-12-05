@@ -74,7 +74,7 @@ Bundle 'vim-scripts/matchit.zip.git'
 Bundle 'scrooloose/syntastic'
 
 " User Interface
-Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
+Bundle 'bling/vim-airline'
 
 " Misc
 Bundle 'Rename'
