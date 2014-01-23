@@ -68,7 +68,7 @@ set nowrap
 set t_Co=256
 set mouse=a
 
-colorscheme Tomorrow-Night-Bright
+colorscheme jellybeans
 
 if has("gui_running")
   set guioptions=Aem

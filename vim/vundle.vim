@@ -6,6 +6,7 @@ Bundle 'gmarik/vundle'
 " With term support (safe to use in terminals)
 Bundle "chriskempson/vim-tomorrow-theme"
 Bundle 'altercation/vim-colors-solarized'
+Bundle "nanotech/jellybeans.vim"
 
 " Without term support (gui only)
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
