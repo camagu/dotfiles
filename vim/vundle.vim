@@ -76,6 +76,7 @@ Bundle 'scrooloose/syntastic'
 
 " User Interface
 Bundle 'bling/vim-airline'
+Bundle 'edkolev/tmuxline.vim'
 
 " Misc
 Bundle 'Rename'
