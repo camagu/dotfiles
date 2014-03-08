@@ -39,6 +39,9 @@ endif
 set encoding=utf8
 set ffs=unix,dos,mac
 
+" avoid long waiting times
+set timeoutlen=500
+
 " speed up rendering
 set lazyredraw
 set ttyfast
