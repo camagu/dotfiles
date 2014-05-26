@@ -72,7 +72,18 @@ set shiftround
 set t_Co=256
 set mouse=a
 
-colorscheme jellybeans
+set background=dark
+
+" Set theme based on iterm profile
+try
+  if $ITERM_PROFILE == ''
+    throw "Not in iterm"
+  endif
+
+  colorscheme $ITERM_PROFILE
+catch
+  colorscheme jellybeans
+endtry
 
 if has("gui_running")
   set guioptions=Aem
