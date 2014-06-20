@@ -129,3 +129,13 @@ autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complet
 
 " Use tagfile for each project
 set tags=tags
+
+""""""""""""""""""""""""""""""""""""""""
+" Local settings
+""""""""""""""""""""""""""""""""""""""""
+
+" Enable per-directory vimrc file
+set exrc
+
+" Disable unsecure commands in local vimrc files
+set secure
