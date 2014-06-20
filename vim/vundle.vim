@@ -32,6 +32,7 @@ Bundle 'johnhamelink/blade.vim'
 " JS and JS preprocessors
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'elzr/vim-json'
 
 " CSS and CSS preprocessors
 Bundle 'hail2u/vim-css3-syntax'
