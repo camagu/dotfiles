@@ -102,6 +102,8 @@ set laststatus=2
 set conceallevel=2
 set concealcursor=nc
 
+set fillchars=
+
 syntax enable
 
 """""""""""""""""""""""""""""""""""""""
