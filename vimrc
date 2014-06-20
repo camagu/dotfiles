@@ -91,6 +91,7 @@ endif
 
 set wildmenu
 set number
+set relativenumber
 set ruler
 set showcmd
 set title
