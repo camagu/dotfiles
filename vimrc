@@ -99,8 +99,10 @@ set scrolloff=4
 
 set laststatus=2
 
-syntax enable
+set conceallevel=2
+set concealcursor=nc
 
+syntax enable
 
 """""""""""""""""""""""""""""""""""""""
 " Search
