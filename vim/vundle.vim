@@ -7,6 +7,7 @@ Bundle 'gmarik/vundle'
 Bundle "chriskempson/vim-tomorrow-theme"
 Bundle 'altercation/vim-colors-solarized'
 Bundle "nanotech/jellybeans.vim"
+Bundle "goatslacker/mango.vim"
 
 " Without term support (gui only)
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
