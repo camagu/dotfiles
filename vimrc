@@ -139,3 +139,6 @@ set exrc
 
 " Disable unsecure commands in local vimrc files
 set secure
+
+" Keep this at the bottom
+set shellcmdflag=-c
