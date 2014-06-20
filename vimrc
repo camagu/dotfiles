@@ -101,10 +101,6 @@ set laststatus=2
 
 syntax enable
 
-if !has("gui_running")
-  " Use term bg color
-  highlight Normal ctermbg=none
-endif
 
 """""""""""""""""""""""""""""""""""""""
 " Search
