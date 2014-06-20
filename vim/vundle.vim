@@ -29,6 +29,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'nono/vim-handlebars'
 Bundle 'estin/htmljinja'
 Bundle 'johnhamelink/blade.vim'
+Bundle 'mustache/vim-mustache-handlebars'
 
 " JS and JS preprocessors
 Bundle 'pangloss/vim-javascript'
