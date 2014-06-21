@@ -32,11 +32,16 @@ inoremap <C-M-k> <Esc>:tabnext<CR>i
 " Plugins keymaps
 """"""""""""""""""""""""""""""""""""""""
 
+" Turn default mappings off
+let g:buffergator_suppress_keymaps = 1
+
 " NERDTree - (t)ree
 map <silent> <leader>t :NERDTreeTabsToggle<CR>
 
 " BufferGator - (b)uffer
-map <silent> <leader>b :BuffergatorToggle<CR>
+nnoremap <silent> <leader>b :BuffergatorToggle<CR>
+nnoremap <silent> [b :BuffergatorMruCyclePrev<CR>
+nnoremap <silent> ]b :BuffergatorMruCycleNext<CR>
 
 " CtrlP - (f)ind
 map <silent> <leader>f :CtrlP .<CR>

@@ -1,27 +1,42 @@
 set nocompatible
+filetype plugin on
+filetype indent on
+syntax on
 
 """"""""""""""""""""""""""""""""""""""""
-" Vundle
+" VAM
+"
+" SEE: https://github.com/MarcWeber/vim-addon-manager
 """"""""""""""""""""""""""""""""""""""""
-filetype off
 
-let g:ulti_color_filetype=0
+function! SetupVAM() " {{{
+  let l:config = get(g:, 'vim_addon_manager', {})
 
-if has("gui_running") == 0
-  let g:ulti_color_auto_save=0
-  let g:ulti_color_auto_load=0
-endif
+  let l:config.plugin_root_dir = expand('$HOME', 1) . '/.vim/vim-addons'
+  let l:config.log_to_buf = 1
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+  let g:vim_addon_manager = l:config
 
-source ~/.vim/vundle.vim
+  let &rtp .= (empty(&rtp) ? '' : ',') .
+        \ l:config.plugin_root_dir .
+        \ '/vim-addon-manager'
+
+  if !isdirectory(l:config.plugin_root_dir . '/vim-addon-manager/autoload')
+    execute '!git clone --depth=1 https://github.com/MarcWeber/vim-addon-manager '
+          \ shellescape(l:config.plugin_root_dir . '/vim-addon-manager', 1)
+  endif
+
+  call vam#ActivateAddons([], {'auto_install' : 0})
+endfunction " }}}
+
+call SetupVAM()
+
+" Activate addons
+source $HOME/.vim/addons.vim
 
 """"""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""
-filetype plugin on
-filetype indent on
 
 let mapleader=","
 let g:mapleader=","
@@ -103,8 +118,6 @@ set conceallevel=2
 set concealcursor=nc
 
 set fillchars=
-
-syntax enable
 
 """""""""""""""""""""""""""""""""""""""
 " Search
