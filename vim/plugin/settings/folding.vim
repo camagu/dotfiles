@@ -27,4 +27,4 @@ augroup folding " {{{
   " Set different fold settings depending on the filetype
   autocmd BufNewFile,BufRead *     execute SetupDefaultFold()
   autocmd BufNewFile,BufRead *.vim execute SetupVimFold()
-" }}}
+augroup END " }}}
