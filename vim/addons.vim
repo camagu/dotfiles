@@ -13,20 +13,9 @@
 let s:scripts = []
 
 " Color schemas {{{
-
-" Terminal friendly {{{
-call add(s:scripts, {'name': 'github:altercation/vim-colors-solarized'})
 call add(s:scripts, {'name': 'github:chriskempson/vim-tomorrow-theme'})
 call add(s:scripts, {'name': 'github:goatslacker/mango.vim'})
 call add(s:scripts, {'name': 'github:nanotech/jellybeans.vim'})
-" }}}
-
-" GUI only {{{
-call add(s:scripts, {'name': 'github:29decibel/codeschool-vim-theme'})
-call add(s:scripts, {'name': 'github:daylerees/colour-schemes',
-      \ 'addoninfo': {'runtimepath': 'vim-themes/'}})
-" }}}
-
 " }}}
 
 " Langs {{{
