@@ -7,20 +7,20 @@ nnoremap <leader>m :set colorcolumn=80<CR>
 nnoremap <leader>M :set colorcolumn=<CR>
 
 " Turn search highlight off
-map <silent> <leader><cr> :noh<cr>
+nnoremap <silent> <leader><cr> :noh<cr>
 
 " Remap 0 to first non-blank character
-map 0 ^
+nnoremap 0 ^
 
 """"""""""""""""""""""""""""""""""""""""
 " Navigation keymaps
 """"""""""""""""""""""""""""""""""""""""
 
 " Split windows navigation
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " Tabs navigation
 nnoremap <C-M-j> :tabprevious<CR>
@@ -36,7 +36,7 @@ inoremap <C-M-k> <Esc>:tabnext<CR>i
 let g:buffergator_suppress_keymaps = 1
 
 " NERDTree - (t)ree
-map <silent> <leader>t :NERDTreeTabsToggle<CR>
+nnoremap <silent> <leader>t :NERDTreeTabsToggle<CR>
 
 " BufferGator - (b)uffer
 nnoremap <silent> <leader>b :BuffergatorToggle<CR>
@@ -44,13 +44,13 @@ nnoremap <silent> [b :BuffergatorMruCyclePrev<CR>
 nnoremap <silent> ]b :BuffergatorMruCycleNext<CR>
 
 " CtrlP - (f)ind
-map <silent> <leader>f :CtrlP .<CR>
+nnoremap <silent> <leader>f :CtrlP .<CR>
 
 " RSpec - (rs)pec (*)
-map <silent> <Leader>rsf :call RunCurrentSpecFile()<CR>
-map <silent> <Leader>rsc :call RunNearestSpec()<CR>
-map <silent> <Leader>rsl :call RunLastSpec()<CR>
-map <silent> <Leader>rsa :call RunAllSpecs()<CR>
+nnoremap <silent> <Leader>rsf :call RunCurrentSpecFile()<CR>
+nnoremap <silent> <Leader>rsc :call RunNearestSpec()<CR>
+nnoremap <silent> <Leader>rsl :call RunLastSpec()<CR>
+nnoremap <silent> <Leader>rsa :call RunAllSpecs()<CR>
 
 """"""""""""""""""""""""""""""""""""""""
 " Custom functionality
