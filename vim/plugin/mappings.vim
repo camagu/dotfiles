@@ -56,13 +56,5 @@ nnoremap <silent> <Leader>rsa :call RunAllSpecs()<CR>
 " Custom functionality
 """"""""""""""""""""""""""""""""""""""""
 
-" create parent folder on save
-function WriteCreatingDirs()
-  execute ':silent !mkdir -p %:h'
-  write
-endfunction
-
-command W call WriteCreatingDirs()
-
 " Set %% as current file relative path
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
