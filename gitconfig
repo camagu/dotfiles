@@ -7,3 +7,5 @@
   lg = !"git lg1"
 [core]
 	editor = vim
+[url "https://github"]
+	insteadOf = git://github
