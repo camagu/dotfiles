@@ -29,6 +29,12 @@ inoremap <C-M-j> <Esc>:tabprevious<CR>i
 inoremap <C-M-k> <Esc>:tabnext<CR>i
 
 """"""""""""""""""""""""""""""""""""""""
+" Multi-taps
+""""""""""""""""""""""""""""""""""""""""
+" (s)pell
+nnoremap <silent> <space>s :call multitap#Tap('spell')<CR>
+
+""""""""""""""""""""""""""""""""""""""""
 " Plugins keymaps
 """"""""""""""""""""""""""""""""""""""""
 
