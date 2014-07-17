@@ -119,6 +119,9 @@ set concealcursor=nc
 
 set fillchars=
 
+set textwidth=80
+set colorcolumn=+1
+
 """""""""""""""""""""""""""""""""""""""
 " Search
 """"""""""""""""""""""""""""""""""""""""

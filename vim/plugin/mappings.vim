@@ -2,10 +2,6 @@
 " General
 """"""""""""""""""""""""""""""""""""""""
 
-" Show/hide color column
-nnoremap <leader>m :set colorcolumn=80<CR>
-nnoremap <leader>M :set colorcolumn=<CR>
-
 " Turn search highlight off
 nnoremap <silent> <leader><cr> :noh<cr>
 
@@ -31,6 +27,10 @@ inoremap <C-M-k> <Esc>:tabnext<CR>i
 """"""""""""""""""""""""""""""""""""""""
 " Multi-taps
 """"""""""""""""""""""""""""""""""""""""
+
+" (m)argin
+nnoremap <silent> <space>m :call multitap#Tap('colorcolumn', '', '+1')<CR>
+
 " (s)pell
 nnoremap <silent> <space>s :call multitap#Tap('spell')<CR>
 
