@@ -98,6 +98,10 @@ call add(s:scripts, {'name': 'github:edkolev/tmuxline.vim'})
 
 " Misc {{{
 call add(s:scripts, {'name': 'github:tpope/vim-dispatch'})
+
+" Required by autoload/multitap.vim
+call add(s:scripts, {'name': 'github:vim-scripts/ConvertBase.vim'})
+
 call add(s:scripts, {'name': 'github:vim-scripts/Rename'})
 call add(s:scripts, {'name': 'github:xolox/vim-easytags'})
 call add(s:scripts, {'name': 'github:xolox/vim-misc'})

@@ -31,6 +31,9 @@ inoremap <C-M-k> <Esc>:tabnext<CR>i
 " (m)argin
 nnoremap <silent> <space>m :call multitap#Tap('colorcolumn', '', '+1')<CR>
 
+" (r)uler
+nnoremap <silent> <space>r :call multitap#Multitap('relativenumber', 'number')<CR>
+
 " (s)pell
 nnoremap <silent> <space>s :call multitap#Tap('spell')<CR>
 
