@@ -37,14 +37,5 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-# Hooks
-# =====
-
-# Load direnv local bin if direnv is available
-#   See: http://direnv.net/
-if type direnv > /dev/null 2>&1; then
-  eval "$(direnv hook $0)"
-fi
-
 # IMPORTANT: Don't set paths or bootstrap other applications here, do it in
 #   .zshenv
