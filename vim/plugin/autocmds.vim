@@ -1,4 +1,5 @@
 if has("gui_running") == 0
+if has("gui_running") == 0 " {{{
   " NOTE: Only apply to vshell vim since gui vim handles it automatically
   augroup reload_changed_files " {{{
     autocmd!
@@ -6,7 +7,17 @@ if has("gui_running") == 0
     " Prompts to reload file if changed exernally
     autocmd BufEnter,CursorHold,CursorHoldI,CursorMoved,CursorMovedI * checktime
   augroup END " }}}
-end
+endif " }}}
+
+" Don't screw up folds when inserting text that might affect them, until
+ " leaving insert mode. Foldmethod is local to the window. Protect against
+ " screwing up folding when switching between windows.
+augroup disable_folding_on_insert_mode
+  autocmd!
+
+  autocmd InsertEnter * call togglefoldmethod#disable()
+  autocmd InsertLeave,WinLeave * call togglefoldmethod#restore()
+augroup END
 
 augroup whitespaces " {{{
   autocmd!
