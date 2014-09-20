@@ -49,6 +49,7 @@ call add(s:scripts, {'name': 'github:cakebaker/scss-syntax.vim'})
 call add(s:scripts, {'name': 'github:groenewege/vim-less'})
 call add(s:scripts, {'name': 'github:hail2u/vim-css3-syntax'})
 call add(s:scripts, {'name': 'github:skammer/vim-css-color'})
+call add(s:scripts, {'name': 'github:wavded/vim-stylus'})
 " }}}
 
 " Ruby and Rails related {{{
