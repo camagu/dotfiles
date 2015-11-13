@@ -16,6 +16,7 @@ let s:scripts = []
 call add(s:scripts, {'name': 'github:chriskempson/vim-tomorrow-theme'})
 call add(s:scripts, {'name': 'github:goatslacker/mango.vim'})
 call add(s:scripts, {'name': 'github:nanotech/jellybeans.vim'})
+call add(s:scripts, {'name': 'github:kristijanhusak/vim-hybrid-material'})
 " }}}
 
 " Langs {{{
@@ -48,7 +49,7 @@ call add(s:scripts, {'name': 'github:elzr/vim-json'})
 call add(s:scripts, {'name': 'github:cakebaker/scss-syntax.vim'})
 call add(s:scripts, {'name': 'github:groenewege/vim-less'})
 call add(s:scripts, {'name': 'github:hail2u/vim-css3-syntax'})
-call add(s:scripts, {'name': 'github:skammer/vim-css-color'})
+"call add(s:scripts, {'name': 'github:skammer/vim-css-color'})
 call add(s:scripts, {'name': 'github:wavded/vim-stylus'})
 " }}}
 
@@ -63,9 +64,10 @@ call add(s:scripts, {'name': 'github:tpope/vim-rails'})
 call add(s:scripts, {'name': 'github:vim-ruby/vim-ruby'})
 " }}}
 
-" Text preprocessors {{{
+" Plain text processors {{{
 call add(s:scripts, {'name': 'github:timcharper/textile.vim'})
 call add(s:scripts, {'name': 'github:tpope/vim-markdown'})
+call add(s:scripts, {'name': 'github:aklt/plantuml-syntax'})
 " }}}
 
 " }}}
@@ -80,7 +82,8 @@ call add(s:scripts, {'name': 'github:scrooloose/nerdtree'})
 " }}}
 
 " Text utilities {{{
-call add(s:scripts, {'name': 'github:ervandew/supertab'})
+"call add(s:scripts, {'name': 'github:ervandew/supertab'})
+call add(s:scripts, {'name': 'github:Shougo/neocomplcache.vim'})
 call add(s:scripts, {'name': 'github:kana/vim-textobj-user'})
 call add(s:scripts, {'name': 'github:scrooloose/nerdcommenter'})
 call add(s:scripts, {'name': 'github:terryma/vim-multiple-cursors'})
@@ -104,8 +107,8 @@ call add(s:scripts, {'name': 'github:tpope/vim-dispatch'})
 call add(s:scripts, {'name': 'github:vim-scripts/ConvertBase.vim'})
 
 call add(s:scripts, {'name': 'github:vim-scripts/Rename'})
-call add(s:scripts, {'name': 'github:xolox/vim-easytags'})
-call add(s:scripts, {'name': 'github:xolox/vim-misc'})
+"call add(s:scripts, {'name': 'github:xolox/vim-easytags'})
+"call add(s:scripts, {'name': 'github:xolox/vim-misc'})
 " }}}
 
 " }}}

@@ -12,10 +12,11 @@ syntax on
 function! SetupVAM() " {{{
   let l:config = get(g:, 'vim_addon_manager', {})
 
+  let g:vim_addon_manager = l:config
+
   let l:config.plugin_root_dir = expand('$HOME', 1) . '/.vim/vim-addons'
   let l:config.log_to_buf = 1
-
-  let g:vim_addon_manager = l:config
+  let l:config.auto_install = 0
 
   let &rtp .= (empty(&rtp) ? '' : ',') .
         \ l:config.plugin_root_dir .
@@ -26,7 +27,7 @@ function! SetupVAM() " {{{
           \ shellescape(l:config.plugin_root_dir . '/vim-addon-manager', 1)
   endif
 
-  call vam#ActivateAddons([], {'auto_install' : 0})
+  call vam#ActivateAddons([], {})
 endfunction " }}}
 
 call SetupVAM()

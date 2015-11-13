@@ -31,7 +31,7 @@ augroup whitespaces " {{{
   autocmd BufWritePre * :%s/\s\+$//e
 
   " Remove extra blank lines
-  autocmd BufWritePre * :%s/\n\n\n\+/\r\r/e
+  "autocmd BufWritePre * :%s/\n\n\n\+/\r\r/e
 augroup END " }}}
 
 augroup refresh_ui " {{{
