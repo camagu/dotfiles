@@ -33,7 +33,7 @@ endfunction " }}}
 call SetupVAM()
 
 " Activate addons
-source $HOME/.vim/addons.vim
+source $HOME/.config/nvim/addons.vim
 
 """"""""""""""""""""""""""""""""""""""""
 " General
