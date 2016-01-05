@@ -4,36 +4,13 @@ filetype indent on
 syntax on
 
 """"""""""""""""""""""""""""""""""""""""
-" VAM
+" vim-plug
 "
-" SEE: https://github.com/MarcWeber/vim-addon-manager
+" SEE: https://github.com/junegunn/vim-plug
 """"""""""""""""""""""""""""""""""""""""
-
-function! SetupVAM() " {{{
-  let l:config = get(g:, 'vim_addon_manager', {})
-
-  let g:vim_addon_manager = l:config
-
-  let l:config.plugin_root_dir = expand('$HOME', 1) . '/.vim/vim-addons'
-  let l:config.log_to_buf = 1
-  let l:config.auto_install = 0
-
-  let &rtp .= (empty(&rtp) ? '' : ',') .
-        \ l:config.plugin_root_dir .
-        \ '/vim-addon-manager'
-
-  if !isdirectory(l:config.plugin_root_dir . '/vim-addon-manager/autoload')
-    execute '!git clone --depth=1 https://github.com/MarcWeber/vim-addon-manager '
-          \ shellescape(l:config.plugin_root_dir . '/vim-addon-manager', 1)
-  endif
-
-  call vam#ActivateAddons([], {})
-endfunction " }}}
-
-call SetupVAM()
-
-" Activate addons
-source $HOME/.config/nvim/addons.vim
+call plug#extras#autoInstall()
+source $HOME/.config/nvim/plugins.vim
+call plug#extras#checkUpdates()
 
 """"""""""""""""""""""""""""""""""""""""
 " General

@@ -1,9 +1,3 @@
-augroup update_addons " {{{
-  autocmd!
-
-  autocmd VimEnter * execute addons#updateStale()
-augroup END " }}}
-
 if has("gui_running") == 0 " {{{
   " NOTE: Only apply to vshell vim since gui vim handles it automatically
   augroup reload_changed_files " {{{

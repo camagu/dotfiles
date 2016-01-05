@@ -1,1 +1,2 @@
-/vim/vim-addons
+/nvim/plugged
+/nvim/autoload/plug.vim
