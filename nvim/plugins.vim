@@ -6,10 +6,14 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
 " }}}
 
+" Git and PM " {{{
+Plug 'jaxbot/github-issues.vim'
+Plug 'tpope/vim-fugitive'
+" }}}
+
 " Langs {{{
 
 " Git {{{
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 " }}}
 
