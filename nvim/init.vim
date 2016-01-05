@@ -95,6 +95,8 @@ set fillchars=
 set textwidth=80
 set colorcolumn=+1
 
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
 """""""""""""""""""""""""""""""""""""""
 " Search
 """"""""""""""""""""""""""""""""""""""""
