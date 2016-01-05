@@ -68,6 +68,12 @@ if ! [ "$DOTFILES_PATH/zshrc" = "$(readlink ~/.zshrc)" ]; then
   echo "... done"
 fi
 
+if ! pip show neovim > /dev/null 2>&1; then
+  echo "Setting python support for nvim ..."
+  pip install --user neovim
+  echo "... done"
+fi
+
 XDG_CONFIG_HOME=~/.config
 if ! [ "$DOTFILES_PATH/nvim" = "$(readlink ${XDG_CONFIG_HOME}/nvim)" ]; then
   echo "Setting neovim ..."
