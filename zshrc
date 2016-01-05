@@ -7,7 +7,7 @@ ZSH=$HOME/.oh-my-zsh
 # Theme
 ZSH_THEME="robbyrussell"
 
-# Disable window auto title, normally set by tmux
+# Disable window auto title
 DISABLE_AUTO_TITLE="true"
 
 # Disable corrections, they are annoying
@@ -31,8 +31,7 @@ alias c='clear'
 # Global settings
 # ===============
 
-# Ensure locales are UTF-8 compilant, tmux generates remnant characters if it
-#   isn't
+# Ensure locales are UTF-8 compilant
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8

@@ -23,11 +23,6 @@ set autoread
 set hidden
 set switchbuf=useopen
 
-if $TMUX == ''
-  " use system registry for clipboard (not available in tmux)
-  set clipboard+=unnamed
-endif
-
 set encoding=utf8
 set ffs=unix,dos,mac
 

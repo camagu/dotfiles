@@ -59,16 +59,6 @@ if $TERM_PROGRAM == 'Apple_Terminal'
   autocmd BufEnter,WinEnter,InsertLeave * match Cursor /\%#/
 endif
 
-" tmux
-" ----
-"
-" tmux captures escape sequences sent from vim, so we need to forward them to
-" the emulator.
-if exists('$TMUX') && s:si != '' && s:ei != ''
-  let s:si="\<Esc>Ptmux;\<Esc>".s:si."\<Esc>\\"
-  let s:ei="\<Esc>Ptmux;\<Esc>".s:ei."\<Esc>\\"
-endif
-
 " Use escape sequencess if they where declared.
 if s:si != '' && s:ei != ''
   let &t_SI=s:si
