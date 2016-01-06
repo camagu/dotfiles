@@ -28,6 +28,10 @@ source $ZSH/oh-my-zsh.sh
 alias q='exit'
 alias c='clear'
 
+# Use neovim
+alias vim='nvim'
+alias vi='nvim'
+
 # Global settings
 # ===============
 
