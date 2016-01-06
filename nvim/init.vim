@@ -23,6 +23,9 @@ set autoread
 set hidden
 set switchbuf=useopen
 
+" use system registry as clipboard
+set clipboard+=unnamed
+
 set encoding=utf8
 set ffs=unix,dos,mac
 
