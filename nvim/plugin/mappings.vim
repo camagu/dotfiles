@@ -44,8 +44,11 @@ nnoremap <silent> <space>s :call multitap#Tap('spell')<CR>
 " Turn default mappings off
 let g:buffergator_suppress_keymaps = 1
 
-" NERDTree - (t)ree
-nnoremap <silent> <leader>t :NERDTreeTabsToggle<CR>
+" netrw (file expolorer) - (e)xplore
+nnoremap <silent> <leader>ee :edit .<CR>
+nnoremap <silent> <leader>es :split .<CR>
+nnoremap <silent> <leader>ev :vsplit .<CR>
+nnoremap <silent> <leader>et :tabe .<CR>
 
 " BufferGator - (b)uffer
 nnoremap <silent> <leader>b :BuffergatorToggle<CR>

@@ -67,9 +67,7 @@ Plug 'aklt/plantuml-syntax'
 
 " Navigation {{{
 Plug 'jeetsukumaran/vim-buffergator'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
 " }}}
 
 " Text utilities {{{
@@ -87,6 +85,7 @@ Plug 'benekastah/neomake'
 
 " User Interface {{{
 Plug 'bling/vim-airline'
+Plug 'tpope/vim-vinegar'
 " }}}
 
 " Misc {{{
