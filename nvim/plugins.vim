@@ -82,7 +82,7 @@ Plug 'tpope/vim-surround'
 " }}}
 
 " Syntaxis checkers {{{
-Plug 'scrooloose/syntastic'
+Plug 'benekastah/neomake'
 " }}}
 
 " User Interface {{{
@@ -103,4 +103,3 @@ Plug 'vim-scripts/Rename'
 " }}}
 
 call plug#end()
-

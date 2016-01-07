@@ -18,6 +18,12 @@ augroup disable_folding_on_insert_mode
   autocmd InsertLeave,WinLeave * call togglefoldmethod#restore()
 augroup END
 
+augroup neomake_hooks
+  autocmd!
+
+  autocmd BufWritePost,BufReadPost * Neomake
+augroup END
+
 augroup whitespaces " {{{
   autocmd!
 
