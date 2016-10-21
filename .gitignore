@@ -1,2 +1,7 @@
+# Vim Plug related
 /nvim/plugged
 /nvim/autoload/plug.vim
+/nvim/autoload/plug.vim.old
+
+# netrw history
+/nvim/.netrwhist
