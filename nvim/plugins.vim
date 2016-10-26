@@ -67,7 +67,7 @@ Plug 'aklt/plantuml-syntax'
 
 " Navigation {{{
 Plug 'jeetsukumaran/vim-buffergator'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 " }}}
 
 " Text utilities {{{
