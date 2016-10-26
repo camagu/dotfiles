@@ -84,8 +84,9 @@ Plug 'benekastah/neomake'
 " }}}
 
 " User Interface {{{
-Plug 'bling/vim-airline'
 Plug 'tpope/vim-vinegar'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " }}}
 
 " Misc {{{
