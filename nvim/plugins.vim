@@ -2,8 +2,9 @@ call plug#begin()
 
 " Color schemas {{{
 Plug 'goatslacker/mango.vim'
-Plug 'nanotech/jellybeans.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'nanotech/jellybeans.vim'
+Plug 'notpratheek/vim-luna'
 " }}}
 
 " Git and PM " {{{
