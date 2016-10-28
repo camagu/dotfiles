@@ -72,7 +72,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " }}}
 
 " Text utilities {{{
-Plug 'Shougo/neocomplcache.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kana/vim-textobj-user'
 Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'

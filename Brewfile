@@ -7,5 +7,7 @@ brew 'zsh-completions'
 
 cask 'iterm2'
 
+brew 'python3' # Required by several nvim plugins
+
 brew 'neovim/neovim/neovim'
 brew 'the_silver_searcher' # Fast search for nvim

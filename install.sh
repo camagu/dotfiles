@@ -74,6 +74,12 @@ if ! pip show neovim > /dev/null 2>&1; then
   echo "... done"
 fi
 
+if ! pip3 show neovim > /dev/null 2>&1; then
+  echo "Setting python3 support for nvim ..."
+  pip3 install --user neovim
+  echo "... done"
+fi
+
 XDG_CONFIG_HOME=~/.config
 if ! [ "$DOTFILES_PATH/nvim" = "$(readlink ${XDG_CONFIG_HOME}/nvim)" ]; then
   echo "Setting neovim ..."
