@@ -8,11 +8,6 @@ if ! [ -x "$(command -v brew)" ]; then
   echo "... done"
 fi
 
-if ! brew bundle check > /dev/null 2>&1; then
-  echo "Installing dependencies ..."
-  brew bundle install
-  echo "... done"
-fi
 
 if ! git config --global user.name > /dev/null; then
   echo "Git username:"
@@ -30,28 +25,16 @@ if ! git config --global user.email > /dev/null; then
   fi
 fi
 
-if ! grep "$(command -v zsh)" /etc/shells > /dev/null 2>&1; then
-  echo "Adding ZSH to available shells ..."
-  echo "$(command -v zsh)" | sudo tee -a /etc/shells > /dev/null
-  echo "... done"
-fi
-
-user_shell=`dscl . -read /Users/$(whoami) UserShell | cut -d' ' -f2 -`
-if [ "$(command -v zsh)" != $user_shell ]; then
-  echo "Setting ZSH as default shell ..."
-  chsh -s $(command -v zsh)
-  echo "... done"
-fi
-
-if ! [ -d ~/.oh-my-zsh ]; then
-  echo "Installing Oh My ZSH! ..."
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  echo "... done"
-fi
 
 if ! [ -d $DOTFILES_PATH ]; then
   echo "Cloning camagu/dotfiles ..."
   git clone https://github.com/camagu/dotfiles.git $DOTFILES_PATH
+  echo "... done"
+fi
+
+if ! brew bundle check --file=${DOTFILES_PATH}/Brewfile > /dev/null 2>&1; then
+  echo "Installing dependencies ..."
+  brew bundle install --file=${DOTFILES_PATH}/Brewfile
   echo "... done"
 fi
 
@@ -61,10 +44,9 @@ if ! [ -d ~/dotfiles_backups ]; then
   echo "... done"
 fi
 
-if ! [ "$DOTFILES_PATH/zshrc" = "$(readlink ~/.zshrc)" ]; then
-  echo "Setting zshrc ..."
-  mv ~/.zshrc ~/dotfiles_backups/zshrc-`date "+%Y.%m.%d-%H.%M.%S"` > /dev/null 2>&1
-  ln -s $DOTFILES_PATH/zshrc ~/.zshrc
+if ! [ -x "$(command -v pip)" ]; then
+  echo "Installing pip ..."
+  curl https://bootstrap.pypa.io/get-pip.py | sudo python
   echo "... done"
 fi
 
@@ -92,5 +74,30 @@ fi
 if [ "$(git config --global core.editor)" != "nvim" ]; then
   echo "Setting neovim as default editor for git ..."
   git config --global core.editor nvim
+  echo "... done"
+fi
+if ! grep "$(command -v zsh)" /etc/shells > /dev/null 2>&1; then
+  echo "Adding ZSH to available shells ..."
+  echo "$(command -v zsh)" | sudo tee -a /etc/shells > /dev/null
+  echo "... done"
+fi
+
+user_shell=`dscl . -read /Users/$(whoami) UserShell | cut -d' ' -f2 -`
+if [ "$(command -v zsh)" != $user_shell ]; then
+  echo "Setting ZSH as default shell ..."
+  chsh -s $(command -v zsh)
+  echo "... done"
+fi
+
+if ! [ -d ~/.oh-my-zsh ]; then
+  echo "Installing Oh My ZSH! ..."
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  echo "... done"
+fi
+
+if ! [ "$DOTFILES_PATH/zshrc" = "$(readlink ~/.zshrc)" ]; then
+  echo "Setting zshrc ..."
+  mv ~/.zshrc ~/dotfiles_backups/zshrc-`date "+%Y.%m.%d-%H.%M.%S"` > /dev/null 2>&1
+  ln -s $DOTFILES_PATH/zshrc ~/.zshrc
   echo "... done"
 fi
