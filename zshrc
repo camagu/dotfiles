@@ -40,5 +40,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-# IMPORTANT: Don't set paths or bootstrap other applications here, do it in
-#   .zshenv
+# IMPORTANT: Don't set paths or bootstrap other applications inside ths file.
+# Use `~/.zshrc.after` instead.
+
+[ -f ~/.zshrc.after ] && source ~/.zshrc.after
