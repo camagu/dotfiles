@@ -30,6 +30,7 @@ Plug 'tpope/vim-haml'
 
 " JS and JS preprocessors {{{
 Plug 'kchmck/vim-coffee-script'
+Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 " }}}
 
