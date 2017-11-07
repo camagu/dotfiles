@@ -10,6 +10,9 @@ ZSH_THEME="robbyrussell"
 # Disable window auto title
 DISABLE_AUTO_TITLE="true"
 
+# And use the current folder as window title
+precmd() { echo -ne "\e]1;$(basename "${PWD}")\a" }
+
 # Disable corrections, they are annoying
 DISABLE_CORRECTION="true"
 

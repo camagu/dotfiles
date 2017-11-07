@@ -84,7 +84,7 @@ set number
 set relativenumber
 set ruler
 set showcmd
-set title
+set notitle
 set noshowmode
 set scrolloff=4
 
