@@ -8,3 +8,7 @@ if has('mac') " {{{
         \ 'texthl': 'SignColumn',
         \ }
 endif " }}}
+
+call neomake#configure#automake('nw', 750)
+
+
