@@ -102,8 +102,6 @@ Plug 'tpope/vim-dispatch'
 Plug 'vim-scripts/ConvertBase.vim'
 
 Plug 'vim-scripts/Rename'
-"Plug 'xolox/vim-easytags'
-"Plug 'xolox/vim-misc'
 " }}}
 
 " }}}
