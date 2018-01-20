@@ -51,7 +51,6 @@ Plug 'wavded/vim-stylus'
 " Ruby and Rails related {{{
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-endwise'

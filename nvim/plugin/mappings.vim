@@ -58,12 +58,6 @@ nnoremap <silent> ]b :BuffergatorMruCycleNext<CR>
 " CtrlP - (f)ind
 nnoremap <silent> <leader>f :CtrlP .<CR>
 
-" RSpec - (rs)pec (*)
-nnoremap <silent> <Leader>rsf :call RunCurrentSpecFile()<CR>
-nnoremap <silent> <Leader>rsc :call RunNearestSpec()<CR>
-nnoremap <silent> <Leader>rsl :call RunLastSpec()<CR>
-nnoremap <silent> <Leader>rsa :call RunAllSpecs()<CR>
-
 """"""""""""""""""""""""""""""""""""""""
 " Custom functionality
 """"""""""""""""""""""""""""""""""""""""
