@@ -58,6 +58,11 @@ nnoremap <silent> ]b :BuffergatorMruCycleNext<CR>
 " CtrlP - (f)ind
 nnoremap <silent> <leader>f :CtrlP .<CR>
 
+" LanguageClient - (l)anguage
+nnoremap <silent> <leader>lh :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> <leader>ld :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <leader>lr :call LanguageClient_textDocument_rename()<CR>
+
 """"""""""""""""""""""""""""""""""""""""
 " Custom functionality
 """"""""""""""""""""""""""""""""""""""""

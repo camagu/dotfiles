@@ -75,13 +75,20 @@ Plug 'jeetsukumaran/vim-buffergator'
 " }}}
 
 " Text utilities {{{
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kana/vim-textobj-user'
 Plug 'rhysd/vim-grammarous'
 Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tmhedberg/matchit'
 Plug 'tpope/vim-surround'
+" }}}
+
+" Completion {{{
+Plug 'autozimu/LanguageClient-neovim', {
+      \ 'branch': 'next',
+      \ 'do': 'bash install.sh && npm install -g flow-language-server javascript-typescript-langserver',
+      \ }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " }}}
 
 " Syntaxis checkers {{{
