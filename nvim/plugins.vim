@@ -91,8 +91,8 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " }}}
 
-" Syntaxis checkers {{{
-Plug 'benekastah/neomake'
+" Syntaxis checkers and formatters {{{
+Plug 'w0rp/ale'
 " }}}
 
 " User Interface {{{
