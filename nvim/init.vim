@@ -61,6 +61,7 @@ set shiftround
 """"""""""""""""""""""""""""""""""""""""
 set t_Co=256
 set mouse=a
+set termguicolors
 
 set background=dark
 
@@ -72,7 +73,7 @@ try
 
   colorscheme $ITERM_PROFILE
 catch
-  colorscheme jellybeans
+  colorscheme distilled
 endtry
 
 if has("gui_running")
@@ -113,7 +114,7 @@ set incsearch
 set completeopt=longest,menuone
 
 " If no omnifunc exists for the current file type use default completition
-autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete |	endif
+autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete | endif
 
 """"""""""""""""""""""""""""""""""""""""
 " Tags
