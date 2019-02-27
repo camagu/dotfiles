@@ -15,53 +15,10 @@ Plug 'tpope/vim-fugitive'
 " }}}
 
 " Langs {{{
+Plug 'sheerun/vim-polyglot'
 
-" Git {{{
-Plug 'tpope/vim-git'
-" }}}
-
-" HTML, HTML engines and HTML preprocessors {{{
-Plug 'digitaltoad/vim-jade'
-Plug 'estin/htmljinja'
-Plug 'johnhamelink/blade.vim'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'othree/html5.vim'
-Plug 'slim-template/vim-slim'
-Plug 'tpope/vim-haml'
-" }}}
-
-" JS and JS preprocessors {{{
-Plug 'kchmck/vim-coffee-script'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
-" }}}
-
-" JSON {{{
-Plug 'elzr/vim-json'
-" }}}
-
-" CSS and CSS preprocessors {{{
+" CSS {{{
 Plug 'ap/vim-css-color'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'groenewege/vim-less'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'wavded/vim-stylus'
-" }}}
-
-" Ruby and Rails related {{{
-Plug 'ecomba/vim-ruby-refactoring'
-Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-cucumber'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-rails'
-Plug 'vim-ruby/vim-ruby'
-" }}}
-
-" Plain text processors {{{
-Plug 'timcharper/textile.vim'
-Plug 'tpope/vim-markdown'
-Plug 'aklt/plantuml-syntax'
 " }}}
 
 " }}}
