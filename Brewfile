@@ -5,6 +5,9 @@ brew 'git'
 brew 'zsh'
 brew 'zsh-completions'
 
+tap 'caskroom/fonts'
+cask 'font-fira-code'
+
 cask 'iterm2'
 
 brew 'python3' # Required by several nvim plugins
